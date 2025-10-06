@@ -1,0 +1,29 @@
+[
+  {
+    "name": "mm-nazakaz.ru",
+    "desc": "Мебель под заказ Москва и МО",
+    "image": "mm-nazakaz",
+    "category": "shops",
+    "links": {
+      "view": "https://mm-nazakaz.ru/"
+    }
+  },
+  {
+    "name": "ilab63.ru",
+    "desc": "Сервисный центр iLab. Ремонт техники android и apple с гарантией.",
+    "image": "ilab",
+    "category": "shops",
+    "links": {
+      "view": "https://ilab63.ru/"
+    }
+  },
+  {
+    "name": "souzholod.ru",
+    "desc": "Интернет-магазин по продаже холодильного оборудования",
+    "image": "souz-holod",
+    "category": "shops",
+    "links": {
+      "view": "https://souzholod.ru/"
+    }
+  }
+]
