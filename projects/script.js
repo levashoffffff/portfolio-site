@@ -20,7 +20,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Jigar Sable";
+            document.title = "Выполненные работы | Портфолио Левашов Артур";
             $("#favicon").attr("href", "/assets/images/favicon.png");
         }
         else {
@@ -56,7 +56,6 @@ function showProjects(projects) {
           <p>${project.desc}</p>
           <div class="btns">
             <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
       </div>
@@ -106,7 +105,7 @@ getProjects().then(data => {
 // fetch projects end
 
 // Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+/* var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
@@ -114,7 +113,7 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
-})();
+})(); */
 // End of Tawk.to Live Chat
 
 // disable developer mode
