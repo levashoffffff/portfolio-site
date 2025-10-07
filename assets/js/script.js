@@ -110,7 +110,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -137,6 +137,7 @@ function showProjects(projects) {
         origin: 'top',
         distance: '80px',
         duration: 1000,
+        viewFactor: 0.1,
         reset: true
     });
 
@@ -207,6 +208,7 @@ const srtop = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 1000,
+    viewFactor: 0.1,
     reset: true
 });
 
