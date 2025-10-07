@@ -107,10 +107,18 @@ function showSkills(skills) {
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
+    
+    // Определяем базовый путь для GitHub Pages
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const basePath = isLocalhost ? '' : `/${window.location.pathname.split('/')[1] || ''}`;
+    
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+        // Используем правильный путь для картинок
+        const imagePath = `${basePath}/assets/images/projects/${project.image}.png`;
+        
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="${imagePath}" alt="project" onerror="this.style.display='none'" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
